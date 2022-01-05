@@ -16,7 +16,7 @@ public:
 	}
 
 	void fire() {
-		if(!this->weapon)
+		if(this->weapon)
 			this->weapon->fire();
 	}
 
