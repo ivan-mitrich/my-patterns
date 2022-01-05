@@ -6,7 +6,7 @@ class LaserGun :
 {
 public:
     void fire() override {
-        std::cout << "pew-pew-pew/n";
+        std::cout << "pew-pew-pew\n";
     }
     ~LaserGun() override {}
 };

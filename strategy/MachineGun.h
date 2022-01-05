@@ -7,7 +7,7 @@ class MachineGun :
 {
 public:
     void fire() override {
-        std::cout << "tra-ta-ta-ta-ta/n";
+        std::cout << "tra-ta-ta-ta-ta\n";
     }
     ~MachineGun() override {}
 };

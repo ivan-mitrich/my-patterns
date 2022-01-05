@@ -7,7 +7,7 @@ class Bazooka :
 {
 public:
     void fire() override {
-        std::cout << "KABOOM!/n";
+        std::cout << "KABOOM!\n";
     }
     ~Bazooka() override {}
 };
