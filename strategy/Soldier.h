@@ -16,7 +16,8 @@ public:
 	}
 
 	void fire() {
-		this->weapon->fire();
+		if(!this->weapon)
+			this->weapon->fire();
 	}
 
 	~Soldier() { dropWeapon(); }
