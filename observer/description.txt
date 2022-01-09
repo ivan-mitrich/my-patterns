@@ -1,0 +1,6 @@
+Subscribers implement IObserver interface
+Publisher implements ISubject interface
+
+When publisher publish new magazine it notifies all its subscribers.
+Publisher also gives subscribers name of new magazine.
+
