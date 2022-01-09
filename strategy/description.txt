@@ -1,0 +1,5 @@
+Soldier has a weapon.
+IWeapon - interface that encapsulates shooting methods of different weapons.
+LaserGun, Bazooka, MachineGun - different methods that implements IWeapon interface.
+
+In main.cpp Soldier uses different weapons by means their common interface. 
