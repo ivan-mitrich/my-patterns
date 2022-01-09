@@ -16,5 +16,11 @@ public:
 		elements.remove(elem);
 		std::cout << "Remove element: " << elem->getName() << "\n";
 	}
+	void printElements() {
+		std::cout << "canvas elements : [";
+		for (const auto& e : elements)
+			std::cout << e->getName() << " ";
+		std::cout << "]\n";
+	}
 };
 
