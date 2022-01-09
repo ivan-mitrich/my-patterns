@@ -1,0 +1,6 @@
+Client is main function, because there all commands, receivers and invoker are created.
+CarDoor, CarEngine, CarLights are receivers that execute specific commands.
+OpenCarDoorCommand, StartUpCarEngineCommand, TurnOnCarLightsCommand - 
+classes that implement ISimpleCommand interface. 
+Commands get receivers and can call their appropriate methods in execute() member-function.
+Driver is invoker that gets command objects and executes them.
