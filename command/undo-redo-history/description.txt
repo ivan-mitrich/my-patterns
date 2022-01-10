@@ -1,0 +1,13 @@
+Invoker is set "do" command and appropriate "undo" command.
+When invoker calls execute, undo or redo methods it pushes executed command into history stack. 
+Moreover when invoker calls execute and redo methods it also pushes command into undo stack.
+Similarly invoker pushes command into redo stack when it calls undo method.
+
+Addition, Deletion, Move commands implements IUndoRedoCommand interface.
+Deletion is opposite (undo command) for Addition. 
+Move doesnt have a direct opposite command because for reversing its action one needs to pass 
+previous coordinates with the opposite sign.
+
+IUndoRedoCommand does not contain undo method to implement in order to help history stack print appropriate
+description of called command. It is worth noting, history stack contains pointers to IUndoRedoCommand and does not know
+what method of IUndoRedoCommand was called.
