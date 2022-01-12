@@ -1,21 +1,22 @@
 #pragma once
+#include "Account.h"
 #include "IState.h"
 class BlockedState :
     public IState
 {
 public:
 	BlockedState(Account* a) : IState::IState(a) {}
-	void logIn() {
+	void logIn() override {
 		std::cout << "Can not change state to logged IN from blocked state\n";
 	}
-	void logOut() {
+	void logOut() override {
 		std::cout << "Can not change state to logged OUT from blocked state\n";
 	}
-	void block() {
+	void block() override {
 		std::cout << "Account has been already in blocked state\n";
 	}
-	void printStateName() {
-	
+	void printStateName() override {
+		std::cout << "Blocked\n";
 	}
 };
 

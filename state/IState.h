@@ -1,6 +1,7 @@
 #pragma once
-#include "Account.h"
 #include <iostream>
+
+class Account;
 class IState
 {
 protected:
