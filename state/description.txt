@@ -1,0 +1,12 @@
+Account plays role as a context.
+It has 4 states : LoggedIn, LoggedOut, Blocked and initial EmptyState.
+And it has 3 member functions to switch between states.
+From Blocked state one cant switch to any state.
+From Empty state one can switch to each state.
+LoggedIn, LoggedOut allows to switch to LoggedOut, Blocked and LoggedIn, Blocked states respectively.
+
+Classes Account and LoggedIn contains .cpp files in order to prevent cyclic references in the other files headers. 
+That situation could arise because all definitions are located in .h files for simplicity.
+
+
+ 
