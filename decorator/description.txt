@@ -1,0 +1,7 @@
+We will make pizza!
+IPizza is interface implemented by PizzaDough.
+PizzaTopping is abstract class for all future toppings that wrap IPizza.
+Sauce, Meat, Cheese are toppings that extend PizzaTopping. 
+
+Wrapping here is modification of getIngredients member function. 
+It is performed by addition of string that describe new topping on pizza dough.
