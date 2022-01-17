@@ -1,0 +1,5 @@
+American and European notebooks try to connect to Powers Stocks.
+To connect American notebook to european power stock EuropeanToAmericanSocketAdapter is used.
+This class is created using "class adapter pattern".
+To connect European notebook to american power stock AmericanToEuropeanSocketAdapter is used.
+This class is created using "class object pattern".
