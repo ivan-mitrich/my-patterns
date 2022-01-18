@@ -1,0 +1,1 @@
+ComputerFacade encapsulates complex structure of real computer (for example loudspeakers, monitor ...). 
