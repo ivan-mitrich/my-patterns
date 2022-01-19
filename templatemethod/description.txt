@@ -1,0 +1,3 @@
+TypicalDay is template method class.
+There are two mandatory overridden functions in TypicalDay class and one hook function.
+Hook function (method spendFreeTime) is overriden only in TypicalStudentDay while TypicalAdultDay doesn't need free time.
