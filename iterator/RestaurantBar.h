@@ -9,8 +9,8 @@ private:
 	std::list<MenuItem> menu;
 
 public:
-	BarIterator createIterator() {
-		return BarIterator(menu);
+	BarIterator* createIterator() {
+		return new BarIterator(menu);
 	}
 	void addMenuItem(MenuItem item) {
 		menu.push_back(item);

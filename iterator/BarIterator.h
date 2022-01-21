@@ -10,15 +10,14 @@ class BarIterator :
 {
 private:
     std::list<MenuItem> menu;
-    std::list<MenuItem>::iterator it_begin;
-    std::list<MenuItem>::iterator it_end;
+    std::list<MenuItem>::const_iterator it;
 public:
-    BarIterator(std::list<MenuItem> m) : menu(m), it_begin(menu.begin()), it_end(menu.end()) {}
+    BarIterator(const std::list<MenuItem>& m) : menu(m), it(menu.begin()) {}
     bool hasNext() override {
-        return it_begin != it_end;
+        return it != menu.end();
     }
     MenuItem next() {
-        return *it_begin++;
+        return *it++;
     }
 };
 
