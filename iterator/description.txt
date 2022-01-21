@@ -1,0 +1,8 @@
+Waitress has to show Restaurant Menu that consists of Bar and Kitchen.
+Both of them have different menu organization. 
+Thats why waitress uses iterator to iterate through each menu.
+
+BarIterator is a pointer which usage helps to avoid extra copying of its members.
+This extra copying makes list iterator invalid, because it is initialized in constructor only once.
+While after being copied list collection changes its location in memory.
+
