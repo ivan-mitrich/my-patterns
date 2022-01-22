@@ -1,25 +1,29 @@
 #pragma once
 #include "BarIterator.h"
 #include "KitchenIterator.h"
+#include "IMenu.h"
 #include <iostream>
 class Waitress
 {
 private:
-	BarIterator *bi;
-	KitchenIterator ki;
+	std::vector<IMenu*> allMenu;
 	void printMenu(iIterator *it) {
 		while (it->hasNext()) {
 			auto item = it->next();
 			std::cout << item.getName() << " " << item.getPrice() << " grn." <<std::endl;
 		}
+		delete it;
 	}
 public:
-	Waitress(BarIterator *b, KitchenIterator k) : bi(b), ki(k) {}
 	void printMenu() {
-		std::cout << "-------Bar menu:-------\n";
-		printMenu(bi);
-		std::cout << "-------Kitchen menu:------\n";
-		printMenu(&ki);
+		for (const auto& menu : allMenu) { 
+			std::cout << menu->getName() << std::endl;
+			printMenu(menu->createIterator());
+		}		
+	}
+
+	void addMenu(IMenu* newMenu) {
+		allMenu.push_back(newMenu);
 	}
 
 };

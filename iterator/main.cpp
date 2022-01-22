@@ -15,7 +15,9 @@ int main() {
 	kitchen.addMenuItem(MenuItem("Steak", 320.0));
 	kitchen.addMenuItem(MenuItem("Napoleon", 100));
 
-	Waitress waitress(bar.createIterator(), kitchen.createIterator());
+	Waitress waitress;
+	waitress.addMenu(&bar);
+	waitress.addMenu(&kitchen);
 	waitress.printMenu();
 	return 0;
 }

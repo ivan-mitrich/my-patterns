@@ -2,17 +2,22 @@
 #include <vector>
 #include "MenuItem.h"
 #include "KitchenIterator.h"
-class RestaurantKitchen
+#include "IMenu.h"
+
+class RestaurantKitchen : public IMenu
 {
 private:
 	std::vector<MenuItem> menu;
-
+	const std::string menuName{"-----KITCHEN MENU-----"};
 public:
-	KitchenIterator createIterator() {
-		return KitchenIterator(menu);
+	iIterator* createIterator() {
+		return new KitchenIterator(menu);
 	}
 	void addMenuItem(MenuItem item) {
 		menu.push_back(item);
+	}
+	std::string getName() const override {
+		return menuName;
 	}
 };
 
