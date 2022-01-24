@@ -1,0 +1,21 @@
+Restaurant menu tree structure:
+
+					Restaurant(m)
+					/        \
+				       /	  \
+				      / 	   \
+				    Bar(m)	   Kitchen(m)---------
+				  / |   | \	     |	  \          |
+				 /  |   |  \	     |	   \	     |
+				/   |   |   \	     |	    \	     |
+		     Cocktails(m) Water Tea Coffee  Borch   Steak   Napoleon
+		     /        \
+		    /	       \
+	           / 	        \
+	       Margarita    Sex on the beach
+
+
+All components on the picture above that are followed by (m) are menus. 
+Menus consists of "leaf" components that dont contain additional elements.
+Menus and leafs implements IMenu interface.
+Virtual method addMenuItem() is used in order to simplify menu filling.
