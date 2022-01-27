@@ -1,0 +1,2 @@
+UkraineFactoryMethod and GermanyFactoryMethod implement factory method of interface IUnitsFactoryMethod.
+Both of them create different units (cooks, workers) depending on their type and factory country (Germany or Ukraine).
