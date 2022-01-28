@@ -1,0 +1,3 @@
+Plumber is concrete object. 
+LazyPlumberProxy is virtual proxy of plumber.
+It defers creation of plumber class until it is needed.
