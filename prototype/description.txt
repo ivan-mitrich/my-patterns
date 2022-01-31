@@ -1,0 +1,3 @@
+IMonster declare prototype interface for all types of monsters.
+MonsterSupplier creates 3 objects that correspond to 3 monster classes with IMonster interface. 
+Each time spawnMonster method is called Monter Supplier returns appropriate copy of monster class object.
