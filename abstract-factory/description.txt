@@ -1,0 +1,4 @@
+Abstract car factories create units for jeep car and sport car.
+Each unit implements appropriate unit interface.
+Jeep has 3 units: 4x4transmission, wheels, engine.
+Sport car has 2 units: wheels and engine.
